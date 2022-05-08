@@ -48,4 +48,18 @@
         -webkit-box-shadow: 0 0 0px 1000px rgb(41,41, 41) inset;
         transition: background-color 5000s ease-in-out 0s;
     }
+    .animate-up{
+        animation: animate-up 0.8s ease-in;
+    }
+    @keyframes animate-up {
+        0%{transform: translateY(200%) }
+        100%{transform: translateY(0) }
+    }
+    .animate-bottom{
+        animation: animate-bottom 1s ease-out;
+    }
+    @keyframes animate-bottom {
+        0%{transform: translateY(0) }
+        100%{transform: translateY(200%) }
+    }
 }

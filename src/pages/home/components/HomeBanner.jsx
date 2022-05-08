@@ -6,7 +6,7 @@ const HomeBanner = ()  =>{
     useEffect(() => {
             let i;
             for(i=0;i<position.length;i++){
-                console.log("test", i, position[i])
+                // console.log("test", i, position[i])
 
                 setTimeout(()=>{
                     }, 1000)
@@ -14,7 +14,7 @@ const HomeBanner = ()  =>{
     },[])
     return (
         <>
-            <section className={'min-h-[400px] md:min-h-[500px] h-full dark:bg-black bg-white dark:bg-opacity-90 text-black dark:text-white pt-[64px]'} >
+            <section className={'min-h-[400px] md:min-h-[500px] h-full dark:bg-black bg-white dark:bg-opacity-90 text-black dark:text-white pt-[44px]'} >
                 <div className={'container h-full'}>
                     <div className={'flex items-center justify-start h-full'}>
                         <div className={'max-w-2xl w-full flex justify-center flex-col text-left text-black dark:text-white'}>
