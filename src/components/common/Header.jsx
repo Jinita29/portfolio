@@ -24,7 +24,7 @@ const Header = () => {
       <header className="shadow-sm drop-shadow-lg py-1 bg-white dark:bg-black fixed top-0 left-0 right-0 z-30">
           <div className="container">
               <div className="flex items-center justify-between">
-                  <Link to={'/'} className="text-3xl uppercase tracking-widest dark:text-white">JP</Link>
+                  <Link to={'/'} className="text-3xl uppercase tracking-widest dark:text-white">J<sub className={'lowercase text-base -bottom-[1px]'}>inita</sub> P<sub className={'lowercase text-base -bottom-[1px]'}>atel</sub></Link>
                   <div className="menu py-1">
                       <ul className="flex items-center justify-end  dark:text-white">
                           {/*<li><Link className="flex px-2 py-3" to="/">Home</Link></li>*/}
