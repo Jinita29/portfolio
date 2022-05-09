@@ -48,7 +48,7 @@ const HomeSkill = () => {
                     <div className={'mb-12'}>
                         <p className={'mb-8 flex items-center opacity-90'}>
                             <span className={'inline-block w-[35px] md:w-[60px] h-0.5 bg-black dark:bg-white mr-2 '}></span>
-                            <span className={'inline-block text-xl'}>Design Frameworks</span>
+                            <span className={'inline-block text-2xl'}>Design Frameworks</span>
                         </p>
                         <div className={'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-10'}>
                             {   designskills.map((skill, id) => {
@@ -58,7 +58,7 @@ const HomeSkill = () => {
                                             <span>{skill.name}</span>
                                             <span className={'text-xs'}>{skill.value}</span>
                                         </h6>
-                                        <div className={'bg-gray-500 rounded-sm overflow-hidden'}>
+                                        <div className={'bg-gray-300 dark:bg-gray-500 rounded-sm overflow-hidden'}>
                                             <div className={'bg-black dark:bg-white p-1 text-center leading-tight flex items-center justify-center'} style={{width: skill.value}}>
                                             </div>
                                         </div>
@@ -72,8 +72,8 @@ const HomeSkill = () => {
                     <div className={'mb-12'}>
                         <p className={'mb-8 flex items-center opacity-90 flex-wrap'}>
                             <span className={'inline-block w-[35px] md:w-[60px] h-0.5 bg-black dark:bg-white mr-2 '}></span>
-                            <span className={'block text-xl'}>Design Tools</span>
-                            <span className={'w-full block text-xs opacity-40 mt-2'}>For extracting assets / converting it to HTML</span>
+                            <span className={'inline-block text-2xl'}>Design Tools</span>
+                            <span className={'w-full block text-sm opacity-60 dark:opacity-40 mt-2'}>For extracting assets / converting it to HTML</span>
                         </p>
                         <div className={'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-10'}>
                             {   designtools.map((skill, id) => {
@@ -83,7 +83,7 @@ const HomeSkill = () => {
                                             <span>{skill.name}</span>
                                             <span className={'text-xs'}>{skill.value}</span>
                                         </h6>
-                                        <div className={'bg-gray-500 rounded-sm overflow-hidden'}>
+                                        <div className={'bg-gray-300 dark:bg-gray-500 rounded-sm overflow-hidden'}>
                                             <div className={'bg-black dark:bg-white p-1 text-center leading-tight flex items-center justify-center'} style={{width: skill.value}}>
                                             </div>
                                         </div>
@@ -97,8 +97,8 @@ const HomeSkill = () => {
                     <div className={'mb-12'}>
                         <p className={'mb-8 flex items-center opacity-90 flex-wrap'}>
                             <span className={'inline-block w-[35px] md:w-[60px] h-0.5 bg-black dark:bg-white mr-2 '}></span>
-                            <span className={'block text-xl'}>FrontEnd Frameworks</span>
-                            <span className={'w-full block text-xs opacity-40 mt-2'}>First Level Skills</span>
+                            <span className={'inline-block text-2xl'}>FrontEnd Frameworks</span>
+                            <span className={'w-full block text-sm opacity-60 dark:opacity-40 mt-2'}>First Level Skills</span>
                         </p>
                         <div className={'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-10'}>
                             {   frontEndFrameworks.map((skill, id) => {
@@ -108,7 +108,7 @@ const HomeSkill = () => {
                                             <span>{skill.name}</span>
                                             <span className={'text-xs'}>{skill.value}</span>
                                         </h6>
-                                        <div className={'bg-gray-500 rounded-sm overflow-hidden'}>
+                                        <div className={'bg-gray-300 dark:bg-gray-500 rounded-sm overflow-hidden'}>
                                             <div className={'bg-black dark:bg-white p-1 text-center leading-tight flex items-center justify-center'} style={{width: skill.value}}>
                                             </div>
                                         </div>
@@ -122,7 +122,7 @@ const HomeSkill = () => {
                     <div className={'mb-12'}>
                         <p className={'mb-8 flex items-center opacity-90 flex-wrap'}>
                             <span className={'inline-block w-[35px] md:w-[60px] h-0.5 bg-black dark:bg-white mr-2 '}></span>
-                            <span className={'block text-xl'}>Compiler Tools</span>
+                            <span className={'inline-block text-2xl'}>Compiler Tools</span>
                         </p>
                         <div className={'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-10'}>
                             {   compilerTools.map((skill, id) => {
@@ -132,7 +132,7 @@ const HomeSkill = () => {
                                             <span>{skill.name}</span>
                                             <span className={'text-xs'}>{skill.value}</span>
                                         </h6>
-                                        <div className={'bg-gray-500 rounded-sm overflow-hidden'}>
+                                        <div className={'bg-gray-300 dark:bg-gray-500 rounded-sm overflow-hidden'}>
                                             <div className={'bg-black dark:bg-white p-1 text-center leading-tight flex items-center justify-center'} style={{width: skill.value}}>
                                             </div>
                                         </div>
@@ -146,7 +146,7 @@ const HomeSkill = () => {
                     <div className={'mb-12'}>
                         <p className={'mb-8 flex items-center opacity-90 flex-wrap'}>
                             <span className={'inline-block w-[35px] md:w-[60px] h-0.5 bg-black dark:bg-white mr-2 '}></span>
-                            <span className={'block text-xl'}>Miscellaneous</span>
+                            <span className={'inline-block text-2xl'}>Miscellaneous</span>
                         </p>
                         <div className={'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-8 gap-x-10'}>
                             {   miscellaneous.map((skill, id) => {
@@ -156,7 +156,7 @@ const HomeSkill = () => {
                                             <span>{skill.name}</span>
                                             <span className={'text-xs'}>{skill.value}</span>
                                         </h6>
-                                        <div className={'bg-gray-500 rounded-sm overflow-hidden'}>
+                                        <div className={'bg-gray-300 dark:bg-gray-500 rounded-sm overflow-hidden'}>
                                             <div className={'bg-black dark:bg-white p-1 text-center leading-tight flex items-center justify-center'} style={{width: skill.value}}>
                                             </div>
                                         </div>

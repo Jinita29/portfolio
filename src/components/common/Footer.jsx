@@ -1,23 +1,16 @@
 import { Icon } from '@iconify/react';
-import {useState} from "react";
+
 const Footer = () => {
-    const [isShow, setIsShow] = useState(false);
 
     const GetScrollPos = (e) => {
         const scrollPos = document.documentElement.scrollTop;
         const getScrollBtn = document.querySelector('.scroll-top-btn');
-        console.log("scroll", getScrollBtn);
-        if(scrollPos >= 150){
-            setIsShow(true)
-            getScrollBtn.classList.remove('animate-down');
-            getScrollBtn.classList.remove('translate-y-[200%]');
-            getScrollBtn.classList.add('animate-up');
+
+        if(scrollPos >= 250){
+            getScrollBtn.classList.add('translate-y-0');
         }
         else{
-            setIsShow(false)
-            getScrollBtn.classList.remove('animate-up');
-            getScrollBtn.classList.add('animate-down');
-            getScrollBtn.classList.add('translate-y-[200%]');
+            getScrollBtn.classList.remove('translate-y-0');
         }
     }
     window.addEventListener('scroll', GetScrollPos);
@@ -35,7 +28,7 @@ const Footer = () => {
                       </div>
                   </div>
               </div>
-              <button onClick={(e)=>scrollTop(e)} className={`scroll-top-btn border-black dark:border-white translate-y-[200%] px-2 py-2 primary-btn fixed right-5 bottom-5`}>
+              <button onClick={(e)=>scrollTop(e)} className={`scroll-top-btn transition-all transform duration-[1.5s] translate-y-[200%] border-black dark:border-white px-2 py-2 primary-btn fixed right-5 bottom-5`}>
                   <Icon icon="charm:chevrons-up" width="20" />
               </button>
           </footer>
