@@ -6,10 +6,12 @@ const Footer = () => {
         const scrollPos = document.documentElement.scrollTop;
         const getScrollBtn = document.querySelector('.scroll-top-btn');
 
-        if(scrollPos >= 250){
+        if(scrollPos >= 200){
             getScrollBtn.classList.add('translate-y-0');
+            getScrollBtn.classList.remove('translate-y-[200%]');
         }
         else{
+            getScrollBtn.classList.add('translate-y-[200%]');
             getScrollBtn.classList.remove('translate-y-0');
         }
     }
